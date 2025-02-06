@@ -1,11 +1,23 @@
 # Next.js + FSD Boilerplate
 
-시작하려면 `src/app/page.tsx` 파일을 수정해주세요.
-
-## 📚 문서 읽기
+root 의 app, pages 와 `src` 내부 FSD 파일을 수정하여 사용해주세요.
 
 [📚 문서 읽기](https://feature-sliced.design/kr/docs/guides/tech/with-nextjs)  
-⚠️ root에 있는 `app`, `pages` 디렉토리는 절대 삭제하지 마세요!
+> ⚠️ root에 있는 `app`, `pages` 디렉토리는 절대 삭제하지 마세요!
+  
+## 🗂️ FSD 폴더구조
+
+| Folder            | Description                                                                 |
+|-------------------|-----------------------------------------------------------------------------|
+| **app**           | Next App folder for App Routing ([Next.js App router](https://nextjs.org/docs/app/building-your-application/routing#the-app-router)) |
+| **pages** *       | Next Pages folder for Pages Routing                                          |
+| **public**        | Public files                                                                |
+| **src/app**       | App FSD Layer                                                                |
+| **src/pages**     | Pages FSD Layer                                                              |
+| **src/widgets**   | Widgets FSD Layer                                                            |
+| **src/features**  | Features FSD Layer                                                           |
+| **src/entities**  | Entities FSD Layer                                                           |
+| **src/shared**    | Shared FSD Layer                                                             |
 
 ## 📌 FSD 아키텍처 규칙
 
@@ -21,3 +33,4 @@
 - 🎨 **ui** – 컴포넌트 및 스타일을 정의해주세요.
 - 🧠 **model** – 상태 및 비즈니스 로직을 관리해주세요.
 - 🔌 **api** – 서버 요청 및 API 통신을 처리해주세요.
+

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../style.module.css";
+import Link from "next/link";
 const FsdConcept = () => {
   return (
     <main className={styles.main}>
@@ -11,14 +12,14 @@ const FsdConcept = () => {
       </section>
 
       <section className={styles.info}>
-        <a
+        <Link
           className={styles.link}
           href="https://feature-sliced.design/kr/docs/guides/tech/with-nextjs"
           target="_blank"
           rel="noopener noreferrer"
         >
           📚 문서 읽기
-        </a>
+        </Link>
       </section>
 
       <section className={styles.warning}>

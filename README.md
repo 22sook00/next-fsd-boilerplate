@@ -1,37 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js + FSD Boilerplate
 
-## Getting Started
+시작하려면 `src/app/page.tsx` 파일을 수정해주세요.
 
-First, run the development server:
+## 📚 문서 읽기
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[📚 문서 읽기](https://feature-sliced.design/kr/docs/guides/tech/with-nextjs)  
+⚠️ root에 있는 `app`, `pages` 디렉토리는 절대 삭제하지 마세요!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📌 FSD 아키텍처 규칙
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 🏛 **app** – 애플리케이션 전역 설정을 정의해주세요.
+- 📄 **pages** – 실제 사용자에게 보여지는 화면 단위로, widget 혹은 feature 들을 조합하여 각 페이지의 레이아웃과 구성할 수 있습니다.
+- 🧩 **widgets** – 헤더, 푸터, 사이드바와 같이 여러 페이지에서 재사용되는 큰 단위의 독립적인 블록들을 관리합니다.
+- ⚙️ **features** – 로그인, 검색, 필터링과 같은 사용자 중심의 기능들을 구현하는 디렉토리 입니다.
+- 🏗 **entities** – 사용자, 상품, 주문과 같은 비즈니스 도메인과 연관된 API 호출함수를 정의할 수 있어요.
+- 🔗 **shared** – 공통 유틸리티, 스타일, 라이브러리를 포함해주세요.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Slice 내부 구조 (Segment)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# next-fsd-boilerplate
+- 🎨 **ui** – 컴포넌트 및 스타일을 정의해주세요.
+- 🧠 **model** – 상태 및 비즈니스 로직을 관리해주세요.
+- 🔌 **api** – 서버 요청 및 API 통신을 처리해주세요.

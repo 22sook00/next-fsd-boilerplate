@@ -1,0 +1,88 @@
+.main {
+  color: #191f28;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  width: 100%;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.header .title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.description {
+  font-weight: 500;
+  color: #6c757d;
+  margin-top: 12px;
+}
+
+/* 항목 리스트 */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.info {
+  a {
+    font-size: 16px;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background 0.2s ease-in-out;
+  span {
+    line-height: 24px;
+  }
+}
+
+.item:hover {
+  background-color: #f8f9fa;
+}
+
+.emoji {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.highlight {
+  font-weight: 600;
+  color: #191f28;
+}
+
+/* 링크 */
+.link {
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* 워닝 섹션 */
+.warning {
+  color: #6c757d;
+  background-color: #f4f7fc;
+  padding: 16px;
+  border-radius: 8px;
+}

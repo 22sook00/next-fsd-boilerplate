@@ -10,7 +10,7 @@ const BaseLayout: FC<BaseLayoutProps> = ({ children }) => {
   return (
     <div className={styles.container}>
       <Header />
-      <main>{children}</main>
+      <main className={styles.mainLayout}>{children}</main>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Geist_Mono } from "next/font/google";
 import "@/app/styles/globals.css";
+import Providers from "@/app/providers";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -10,11 +11,6 @@ const geistMono = Geist_Mono({
 
 const pretendard = localFont({
   src: [
-    {
-      path: "../public/asset/Pretendard-ExtraLight.woff2",
-      weight: "200",
-      style: "normal",
-    },
     {
       path: "../public/asset/Pretendard-Light.woff2",
       weight: "300",
@@ -40,11 +36,6 @@ const pretendard = localFont({
       weight: "700",
       style: "normal",
     },
-    {
-      path: "../public/asset/Pretendard-ExtraBold.woff2",
-      weight: "800",
-      style: "normal",
-    },
   ],
 
   variable: "--font-pretendard",
@@ -65,7 +56,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={`${pretendard.variable} ${geistMono.variable}`}>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

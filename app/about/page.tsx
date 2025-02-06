@@ -1,7 +1,8 @@
+import AboutPage from "@/pages/about/ui";
 import React from "react";
 
-const AboutPage = () => {
-  return <div>AboutPage</div>;
+const About = () => {
+  return <AboutPage />;
 };
 
-export default AboutPage;
+export default About;

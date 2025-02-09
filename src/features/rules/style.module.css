@@ -47,9 +47,7 @@
   padding: 12px;
   border-radius: 8px;
   transition: background 0.2s ease-in-out;
-  span {
-    line-height: 24px;
-  }
+  line-height: 24px;
 }
 
 .item:hover {
